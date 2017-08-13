@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="fonts/iconfont.css" />
+</head>
+  <style>
+body {
+  margin: 8px;
+  display: inline-block;
+  text-align: center;
+  color: #87968e;
+  font-family: "Microsoft Yahei";
+}
+
+
+.layout {
+  margin: 0 auto;
+  width: 1210px;
+}
+
+.iconfont{
+  font-size: 24px;
+}
+
+.work-exp .iconfont{
+  font-size: 28px;
+  color: cornflowerblue;
+  margin: 10px;
+}
+
+#header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#footer:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#header .img {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 150px;
+  margin-top: 50px;
+  opacity: 0.9;
+
+}
+
+#content,
+#footer {
+  margin-left: 120px;
+}
+
+#header h1 {
+  color: #000;
+  float: left;
+  margin-left: 40px;
+  margin-top: 80px;
+  font-size: 56px;
+  font-family: 'SimSun'; 
+}
+
+#header h4 {
+  color: #000;
+  float: left;
+  margin-top: 200px;
+  margin-left: -210px;
+}
+
+h2,h3{
+  color: #000;
+  font-size: 21px;
+}
+
+#header h3 {
+  border-bottom: 3px solid #000;
+  margin-top: 40px;
+  width: 300px;
+  float: right;
+}
+
+#header .contact {
+  text-align: left;
+  color: #000;
+}
+
+.items {
+  list-style: none;
+  float: right;
+  margin-top: -10px;
+  margin-right: 50px;
+}
+
+.items li {
+  margin: 3px;
+}
+
+
+
+#content .education,
+.work-exp,
+#footer .extra-skills,
+.professional-skills{
+  text-align: left;
+  margin-top: 80px;
+}
+
+#content h2 {
+  width: 500px;
+  height: 50px;
+  border-bottom: 2px solid #ccc; 
+  margin-bottom: 50px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: -28px;
+  top: -1px;
+}
+
+
+#content .education li:before {
+  content: '';
+  width: 1px;
+  background-color: #888;
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  bottom: -20px;
+}
+
+#footer h2:first-child {
+  width: 300px;
+  height: 50px;
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 50px;
+}
+
+#footer h2:last-child {
+  width: 400px;
+  height: 50px;
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 50px;
+}
+
+#content .title a{
+  text-decoration: none;
+}
+
+#content .title a>span{
+  font-size: 32px;
+  color: cornflowerblue;
+}
+
+#content .title p{
+  font-size: 24px;
+  color: #222;
+}
+
+#content .title span{
+  font-size: 16px;
+}
+
+#content .education a{
+  text-decoration: none;
+}
+
+#content .education .iconfont{
+  color: cornflowerblue;
+}
+
+#content .education .iconfont:hover{
+  color: lightskyblue;
+}
+
+.work-exp li{
+  padding: 10px 0;
+  width: 280px;
+  height: 300px;
+  float: left;
+  border-radius: 4px;
+  margin: 10px 70px 50px 0;
+}
+
+.work-exp li .content{
+  width: 260px;
+  height: 200px;
+  margin: 0 auto;
+   box-shadow: 0 0 1em hsla(0,0%,0%,0.4);
+}
+
+.work-exp li .details{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.work-exp .details a{
+  text-decoration: none;
+}
+
+.work-exp .details .iconfont:hover{
+  color: lightskyblue;
+}
+
+.work-exp:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.work-exp h3{
+  color: #444;
+  font-size: 16px;
+}
+
+.extra-skills {
+  float: left;
+  width: 200px;
+}
+
+.professional-skills {
+  float: left;
+  margin-left: 140px;
+  width: 700px;
+  color: #444;
+}
+
+.professional-skills .skills{
+  display: inline-block;
+  width: 850px;
+  margin-top: -50px;
+}
+
+
+.professional-skills li {
+  display: inline-block;
+  width: 48%;
+  line-height: 70px;
+}
+
+#footer li span {
+  margin-right: 50px;
+}
+
+#footer .extra {
+  display: inline-block;
+  width: 550px;
+  margin-top: -30px;
+  margin-left: -35px;
+}
+
+.extra-skills span {
+  color: #444;
+}
+  </style>
+
+<body>
+  <div class="layout">
+    <div id="header">
+    <div class="img"></div>
+      <h1>祁 雨 霏</h1>
+      <h4 class="intro">性别：女 ，年龄：21 ，武汉，求职意向：web前端开发</h4>
+      <div class="contact">
+        <h3>CONTACTS</h3>
+        <ul class="items">
+          <li>
+            <i class="iconfont icon-github"></i>
+            https://github.com/Aimerick</li>
+          <li>
+            <i class="iconfont icon-iconfontaddress"></i>
+            华中科技大学韵苑学生公寓</li>
+          <li>
+            <i class="iconfont icon-cion13"></i>
+            1753930534@qq.com</li>
+          <li>
+            <i class="iconfont icon-phone"></i>
+            15827527665</li>
+          <li>
+            <i class="iconfont icon-qq"></i>
+            1753930534</li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div class="work-exp">
+        <h2>PROJECT EXPERIENCE</h2>
+        <ul>
+          <li>
+            <div class="content"><img src="./imgs/00003.jpg" alt="" style="width:260px ;height: 200px"></div>
+            <div class="details">
+              <h3>Vue.js实现移动端微信界面</h3>
+              <a href="https://aimerick.github.io/wechat/"><i class="iconfont icon-huojian"></i></a>  
+              <a href="https://github.com/Aimerick/wechat/tree/master"><i class="iconfont icon-jilu"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="content"><img src="./imgs/00005.jpg" alt="" style="width:260px ;height: 200px"></div>
+            <div class="details">
+              <h3>Node.js命令行聊天机器人</h3>
+              <a href=""><i class="iconfont icon-huojian" style="color: #ddd;"></i></a> 
+              <a href="https://github.com/Aimerick/turing-robot"><i class="iconfont icon-jilu"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="content"><img src="./imgs/00001.jpg" alt="" style="width:260px ;height: 200px"></div>
+            <div class="details">
+              <h3>Vue.js在线简历编辑器</h3>
+              <a href="https://aimerick.github.io/resumer/dist/index.html#/"><i class="iconfont icon-huojian"></i></a> 
+              <a href="https://github.com/Aimerick/resumer"><i class="iconfont icon-jilu"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="content"><img src="./imgs/000000.jpg" alt="" style="width:260px ;height: 200px"></div>
+            <div class="details">
+              <h3>Vue.js在线待办事项</h3>
+              <a href="https://aimerick.github.io/TodoList/dist/index.html"><i class="iconfont icon-huojian"></i></a> 
+              <a href="https://github.com/Aimerick/TodoList"><i class="iconfont icon-jilu"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="content"><img src="./imgs/00002.jpg" alt="" style="width:260px ;height: 200px"></div>
+            <div class="details">
+              <h3>轮播组件</h3>
+              <a href="https://aimerick.github.io/carousel/"><i class="iconfont icon-huojian"></i></a> 
+              <a href="https://github.com/Aimerick/carousel"><i class="iconfont icon-jilu"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="content"><img src="./imgs/00004.jpg" alt="" style="width:260px ;height: 200px"></div>
+            <div class="details">
+              <h3>工控管理系统</h3>
+              <a href=""><i class="iconfont icon-huojian" style="color: #ddd;"></i></a> 
+              <a href=""><i class="iconfont icon-jilu" style="color: #ddd;"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="education">
+        <h2>EDUCATION</h2>
+        <ul>
+          <li>
+            <div class="dot"></div>
+            <h4>学校
+              <span>2014 - 至今</span>
+              </h4> 
+            <p>华中科技大学</p>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <h4>专业&学历
+              <span>2014 - 至今</span>
+              </h4> 
+            <p>电子信息与通信学院-电子信息工程 ， 本科</p>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <h4>相关课程
+              <span></span>
+              </h4> 
+            <p>数据结构 ， C语言程序设计 ， 微机原理 ， 操作系统 ， 通信原理</p>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <h4>获奖情况
+              <span></span>
+              </h4> 
+            <p>华中科技大学优秀团员<br>华中科技大学社会实践创新活动校级优秀个人<br>华中科技大学优秀学生干部</p>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <h4>校内经历
+              <span></span>
+              </h4> 
+            <p>华中科技大学社会实践中心  ， 部长助理<br>华中科技大学日语协会 ， 宣传部部长（负责组织安排部员培训ps技能，制作协会活动的宣传海报与视频。）<br></p>
+          </li>
+        </ul>
+      </div>
+      <div class="education">
+        <h2>EVALUATION</h2>
+        <ul>
+          <li>
+            <div class="dot"></div>
+            <p>学习能力强，关注前端行业动态，平时喜欢写技术博客<a href="http://www.jianshu.com/u/e619fe4d2311">
+                  <a href=""><i class="iconfont icon-huojian"></i></a> </a>。<br>经常活跃在github社区<a href="https://github.com/Aimerick">
+                  <a href=""><i class="iconfont icon-huojian"></i></a> </a>。<br>热爱生活，关注新事物，具有团队合作精神。</p>
+          </li>
+  
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="extra-skills">
+        <h2>EXTRA ABILITIES</h2>
+        <div class="extra">
+          <ul>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            <span>English Skills</span>
+            <p>CET-4 & CET-6，能快速浏览英文文档资料</p>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="professional-skills">
+        <h2>PROFESSTINAL SKILLS</h2>
+        <div class="skills">
+          <ul>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            熟悉HTML5/CSS3/Javascript</li>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            熟练使用jQery, div+css布局</li>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            掌握vue.js，react.js框架的使用</li>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            熟悉webpack，npm等前端工具的使用</li>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            掌握mvvm，json，ps</li>
+          <li>
+            <i class="iconfont icon-jiahao"></i>
+            对算法和数据结构有一定了解</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
